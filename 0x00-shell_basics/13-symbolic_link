@@ -1,0 +1,4 @@
+B#!/bin/bash
+touch _ln_  
+ln -s  /bin/ls _ln_
+
