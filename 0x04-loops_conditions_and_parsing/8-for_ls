@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Prints the name of files that have '-'
+
+list=$(ls)
+
+for i in $list
+do
+    echo "$i" | cut -d '-' --field=2
+    
+done
