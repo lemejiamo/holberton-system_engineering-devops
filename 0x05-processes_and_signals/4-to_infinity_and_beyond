@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# print to infinity and beyond indefinitely
+
+continue="1"
+while [ $continue ]
+do 
+	echo To infinity and beyond
+	sleep 2
+done
