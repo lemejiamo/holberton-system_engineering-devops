@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script to display "Holberton School" 10 times, using a for loop.
+
+for _ in {1..10} # Use of _ as a disposable variable
+do
+    echo Holberton School
+done
