@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+-- scrip to connect to the given host
+ssh -i ubuntu@34.138.121.163
