@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install and run NGNIX
 sudo apt -y update
-sudo apt install -y ngnix
-echo "Holberton School" >> /var/www/html/index.ngnox-debian.html
-systemctl start ngnix
+sudo apt install -y nginx
+sudo echo "Holberton School" > /var/www/html/index.nginx-debian.html
+systemctl start nginx
