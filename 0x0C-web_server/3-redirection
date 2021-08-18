@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Install and configure NGINX
+sudo apt-get update -y
+sudo apt-get install nginx -y
+touch ~/index.html
+echo "Holberton School" > ~/index.html
+sudo cp ~/index.html /var/www/html/index.html
+redirection="server_name _;\n\trewrite ^\/redirect_me google.com permanent;"
+sed -i "s/server_name _;/$redirection/" /etc/nginx/sites-enabled/default
+service nginx start
