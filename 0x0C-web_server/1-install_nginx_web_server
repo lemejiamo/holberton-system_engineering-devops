@@ -2,5 +2,6 @@
 # Install and run NGINX
 sudo apt-get update -y
 sudo apt-get install nginx -y
-echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" > ~/index.html
+sudo cp ~/index.html /var/www/html/index.html
 service nginx start
