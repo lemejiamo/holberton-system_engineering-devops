@@ -18,6 +18,6 @@ default="server {
  	$header;
  	}"
 echo "$default" > ~/default
-sudo mv ~/default /etc/nginx/sites-enabled/default
+sudo mv ~/default /etc/nginx/sites-available/default
 systemctl start nginx.service
 
