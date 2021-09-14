@@ -25,10 +25,10 @@ for task in todo_all:
     if int(user_id) == task["userId"]:
         tasks = tasks + 1
         if task["completed"] is True:
-            string = "\t" + task["title"]
+            string = task["title"]
             task_solved = task_solved + 1
             todo_employe.append(string)
 
 print("Employee {} is done with tasks({}/{}):".format(name, task_solved, tasks))
 for item in todo_employe:
-    print(item)
+    print("\t {}".format(item))
