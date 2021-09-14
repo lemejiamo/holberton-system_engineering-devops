@@ -4,8 +4,12 @@ from urllib import request
 import json
 import sys
 
-user_id = sys.argv[1]
-url_employe = "https://jsonplaceholder.typicode.com/users?id=" + user_id
+try: 
+    user_id = int(sys.argv[1])
+except:
+    exit()
+
+url_employe = "https://jsonplaceholder.typicode.com/users?id=" + str(user_id)
 todo_all = "https://jsonplaceholder.typicode.com/todos"
 
 with request.urlopen(url_employe) as url:
