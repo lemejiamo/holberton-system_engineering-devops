@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+""" Gather Data from API """
 
 from urllib import request
 import json
 import sys
 
-try: 
+try:
     user_id = int(sys.argv[1])
 except:
     exit()
@@ -33,6 +34,10 @@ for task in todo_all:
             task_solved = task_solved + 1
             todo_employe.append(string)
 
-print("Employee {} is done with tasks({}/{}):".format(name, task_solved, tasks))
+print("Employee {} is done with tasks({}/{}):"
+      .format(name,
+              task_solved,
+              tasks))
+
 for item in todo_employe:
     print("\t {}".format(item))
