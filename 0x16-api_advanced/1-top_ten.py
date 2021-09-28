@@ -9,7 +9,9 @@ def top_ten(subreddit):
     import requests
 
     headers = {'User-Agent': 'holbi/0.0.1'}
-    url = 'https://www.reddit.com/r/' + subreddit + '/hot/.json?count=10&limit=10'
+    url = ('https://www.reddit.com/r/' +
+           subreddit +
+           '/hot/.json?count=10&limit=10')
     response = requests.get(url, headers=headers, allow_redirects=False).json()
 
     try:
